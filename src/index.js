@@ -1,1 +1,10 @@
-const avaibleTime = "26.3.2022-14:28:25";
+const puppeteer = require("puppeteer");
+const namemc = require("./Namemc.js");
+
+const name = "fyp";
+
+namemc.getAvailableTime(name).then((time) => {
+    const msTillFree = time - Date.now();
+
+});
+
