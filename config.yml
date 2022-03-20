@@ -1,0 +1,3 @@
+mcname: "uno"
+delayDetection: 700 # Tells how many miliseconds will be waited for time.is should send the delay
+country: "de" # YOur countries alpha 2 code
