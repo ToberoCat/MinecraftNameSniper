@@ -1,9 +1,9 @@
 const puppeteer = require("puppeteer");
 const { sleep } = require("./Utility");
 
-function getDelay(country, sleepTimeout) {
+function getDelay(country, sleepTimeout, headless) {
     return new Promise(async (resolve, reject) => {
-        const browser = await puppeteer.launch({ headless: false });
+        const browser = await puppeteer.launch({ headless: headless, slowMo: 250 });
         const page = await browser.newPage();
         await page.goto(`https://time.is/${country}/`);
 

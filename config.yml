@@ -1,3 +1,7 @@
-mcname: "uno"
+mcname: "Uno"
 delayDetection: 700 # Tells how many miliseconds will be waited for time.is should send the delay
-country: "de" # YOur countries alpha 2 code
+country: "de" # Your countries alpha 2 code
+debugging: true # true tells the browser to show it self for more insight on what's done
+minecraft-microsoft:
+  email: "email-address"
+  password: "password"
